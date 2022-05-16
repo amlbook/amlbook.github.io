@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#E0E0FF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+	margin-bottom: 12px;
+}
+
+/*Main Structure*/
+#w1 {margin: 0 auto; width: 814px;}
+#w2 {background-color:#FFFFFF; border: 7px solid #0000AA;}
+#w3 {background-color:#FFFFFF; background-image: url(../images/top-shadow.jpg); background-repeat: repeat-x; background-position: top; clear: both;padding: 20px 15px;}
+#cit {margin-bottom: 5px;}
+#header {border-bottom:7px solid #0000AA;position: relative;height: 156px;}
+#header #yaser-banner {position: absolute; top: -16px; left: 0;z-index:1;}
+#header #yaser-name {position: absolute; top: 47px; left: 220px;z-index:2;}
+#header #yaser-title {font-size: .8em;position: absolute; top: 110px; left: 230px;z-index:3;}
+#content {float:left; width: 520px;}
+#sidebar {float:right; width: 250px;}
+#footer {font-size: .85em;margin:10px 0;position:relative;}
+#footer .copyright {position:absolute;top: 50%; left: 60px;}
+
+/* Navigation */
+ul#nav {font-size: .8em;margin-bottom: 1em;}
+ul#nav li {line-height: 2em; border-bottom: 1px solid #F0E7E4;}
+ul#nav a {display:block; padding: 0 5px;font-weight:bold;}
+ul#nav a:link {color:#0000AA; text-decoration:none; }
+ul#nav a:visited {color:#0000AA; text-decoration:none; }
+ul#nav a:hover {color:#0000AA;background-color: #FDF9F6; text-decoration:none; }
+ul#nav a:active {color:#0000AA;background-color: #FDF9F6;text-decoration:none;}
+
+/* Type styles */
+a:link {color:#0000AA; text-decoration:underline;}
+a:visited {color:#880088;text-decoration:underline;}
+a:hover {color:#0000AA;text-decoration:none;}
+a:active {color:#0000AA;text-decoration:none;}
+h1 {color:#444444;font-family:Georgia, "Times New Roman", Times, serif;font-size: 1.3em;font-weight: normal;padding-bottom: 0.5em;}
+h2 {color:#0000AA;font-family:Georgia, "Times New Roman", Times, serif;font-size: 1.0em;font-weight: bold;padding-bottom: 0.5em;padding-top: .3em;}
+h3 {color:#333333;font-size: 0.95em;font-weight: bold;padding-bottom: .5em;}
+h5 {color:#666;font-size: 0.85em;font-weight: bold;padding-bottom: 0.3em;}
+h4 {color:#000000;font-size: 0.85em;font-weight: bold; text-transform:uppercase; line-height: 1.5;}
+h6 {color:#999;font-size: 0.8em;font-weight: normal;letter-spacing: 1px;padding-bottom: 0.3em;text-transform:uppercase;}
+p {font-size: .8em;line-height: 1.4em; padding-bottom: 1em;}
+#content li {font-size: .8em;line-height: 1.4em;list-style:disc;margin-left: 2em;}
+#peek li {font-size: .8em;line-height: 1.4em;list-style:disc;margin-left: 2em;}
+strong, b {font-weight: bold;}
+em, i {font-style:oblique;}
+ul {padding-bottom: 1em;}
+
+/* Table */
+/* th, td {padding: .3em; background:#FDF9F6;border: 1px solid #DDD5D2;} */
+th, td {padding: 0.2em; background:#E0E0FF;border: none;}
+.section th, .section td {padding: .3em; background:#FFF;border: 1px solid #DDD5D2;}
+.transparenttable th, .transparenttable td {background: none; border: none; valign: top; padding-bottom: 1em;}
+.transparenttable ul {padding-bottom: 0em;}
+th p, td p {padding-bottom: 0;}
+th, th p {font-weight:bold;}
+
+/*Classes*/
+.section {background-color:#F0F0FF;border: 1px solid #AAAAFF;padding: 10px;margin-bottom: 10px;} /* Style for boxes - html div tag must have the class of "section" for the box style to appear */
+#sidebar .section {background-color: #E0E0FF; border: none;} /*alternate box style for sidebar aside box*/
+.clearfloat {clear:both; font-size:1px;height:0;line-height:0;}
+.fltrt {float: right;}
+.fltlt {float: left;}
+img.fltlt {margin-right: 10px;}
+img.fltrt {margin-left: 10px;}

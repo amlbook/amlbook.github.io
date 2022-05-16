@@ -1,1 +1,323 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="google-site-verification" content="5PFjULenPnzb-Y2d0kJw_OB6E8rQ32e_wLsmiexDGU4" />
+
+<title>Learning From Data - A Short Course</title>
+<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!-- Begin hiding script from older browsers
+// Replace the images inside the double-quotes to your own images
+// You may have any number of images
+adImages = new Array(
+"./BookImagesLowRes/image1.png",
+"./BookImagesLowRes/image1.png",
+"./BookImagesLowRes/image2.png",
+"./BookImagesLowRes/image3.png",
+"./BookImagesLowRes/image4.png",
+"./BookImagesLowRes/image5.png",
+"./BookImagesLowRes/image6.png",
+"./BookImagesLowRes/image7.png",
+"./BookImagesLowRes/image8.png",
+"./BookImagesLowRes/image9.png",
+"./BookImagesLowRes/image10.png",
+"./BookImagesLowRes/image11.png",
+"./BookImagesLowRes/image12.png",
+"./BookImagesLowRes/image13.png",
+"./BookImagesLowRes/image14.png",
+"./BookImagesLowRes/image15.png",
+"./BookImagesLowRes/image16.png",
+"./BookImagesLowRes/image17.png",
+"./BookImagesLowRes/image18.png",
+"./BookImagesLowRes/image19.png",
+"./BookImagesLowRes/image20.png",
+"./BookImagesLowRes/image21.png",
+"./BookImagesLowRes/image22.png",
+"./BookImagesLowRes/image23.png",
+"./BookImagesLowRes/image24.png",
+"./BookImagesLowRes/image25.png",
+"./BookImagesLowRes/image26.png",
+"./BookImagesLowRes/image27.png",
+"./BookImagesLowRes/image28.png",
+"./BookImagesLowRes/image29.png",
+"./BookImagesLowRes/image30.png",
+"./BookImagesLowRes/image31.png",
+"./BookImagesLowRes/image32.png",
+"./BookImagesLowRes/image33.png",
+"./BookImagesLowRes/image34.png",
+"./BookImagesLowRes/image35.png",
+"./BookImagesLowRes/image36.png",
+"./BookImagesLowRes/image37.png",
+"./BookImagesLowRes/image38.png",
+"./BookImagesLowRes/image39.png",
+"./BookImagesLowRes/image40.png",
+"./BookImagesLowRes/image41.png"
+)
+
+// Replace the quotes to inside the double-quotes to your own quotes
+// You may have any number of quotes but they must equal the number of images that rotate
+quote = new Array(
+"This is Image 1",
+"This is Image 1",
+"This is Image 2",
+"This is Image 3",
+"This is Image 4",
+"This is Image 5",
+"This is Image 6",
+"This is Image 7",
+"This is Image 8",
+"This is Image 9",
+"This is Image 10",
+"This is Image 11",
+"This is Image 12",
+"This is Image 13",
+"This is Image 14",
+"This is Image 15",
+"This is Image 16",
+"This is Image 17",
+"This is Image 18",
+"This is Image 19",
+"This is Image 20",
+"This is Image 21",
+"This is Image 22",
+"This is Image 23",
+"This is Image 24",
+"This is Image 25",
+"This is Image 26",
+"This is Image 27",
+"This is Image 28",
+"This is Image 29",
+"This is Image 30",
+"This is Image 31",
+"This is Image 32",
+"This is Image 33",
+"This is Image 34",
+"This is Image 35",
+"This is Image 36",
+"This is Image 37",
+"This is Image 38",
+"This is Image 39",
+"This is Image 40",
+"This is Image 41"
+)
+
+adURL = new Array (
+"./BookImages/image1.png",
+"./BookImages/image1.png",
+"./BookImages/image2.png",
+"./BookImages/image3.png",
+"./BookImages/image4.png",
+"./BookImages/image5.png",
+"./BookImages/image6.png",
+"./BookImages/image7.png",
+"./BookImages/image8.png",
+"./BookImages/image9.png",
+"./BookImages/image10.png",
+"./BookImages/image11.png",
+"./BookImages/image12.png",
+"./BookImages/image13.png",
+"./BookImages/image14.png",
+"./BookImages/image15.png",
+"./BookImages/image16.png",
+"./BookImages/image17.png",
+"./BookImages/image18.png",
+"./BookImages/image19.png",
+"./BookImages/image20.png",
+"./BookImages/image21.png",
+"./BookImages/image22.png",
+"./BookImages/image23.png",
+"./BookImages/image24.png",
+"./BookImages/image25.png",
+"./BookImages/image26.png",
+"./BookImages/image27.png",
+"./BookImages/image28.png",
+"./BookImages/image29.png",
+"./BookImages/image30.png",
+"./BookImages/image31.png",
+"./BookImages/image32.png",
+"./BookImages/image33.png",
+"./BookImages/image34.png",
+"./BookImages/image35.png",
+"./BookImages/image36.png",
+"./BookImages/image37.png",
+"./BookImages/image38.png",
+"./BookImages/image39.png",
+"./BookImages/image40.png",
+"./BookImages/image41.png"
+)
+
+thisAd = 0
+imgCt = adImages.length
+quoteCt = quote.length
+
+function rotate() {
+  if (document.images) {
+    if (document.cycle.complete) {
+	  thisAd++
+	  if (thisAd == imgCt && thisAd == quoteCt) {
+	    thisAd = 0
+	  }
+	  document.cycle.src = adImages[thisAd];
+      window.defaultStatus = quote[thisAd];
+	}
+// This sets the interval to which the images and quotes are rotated. 1000 equals 1 second
+	setTimeout("rotate()", 2000)
+  }
+}
+
+// function rotateLink() { window.parent.location.href = "http://" + adURL[thisAd] }
+-->
+</script>
+
+</head>
+
+<body onload="rotate()">
+<!--Begin Wrap 1-->
+<div id="w1"> <img src="images/grey.gif" width="800" height="34" alt="grey"/>
+<!--Begin Wrap 2-->
+<div id="w2">
+<!--Begin Header-->
+<div id="header"><a href="index.html"><img src="images/banner.png" width="800" height="172" alt="Learning From Data" id="yaser-banner"/><img src="images/nameplate.png" width="552" height="46" alt="Learning From Data" id="yaser-name"/></a><span id="yaser-title"><a href="http://work.caltech.edu">Yaser S. Abu-Mostafa</a>, <a href="http://www.cs.rpi.edu/~magdon">Malik Magdon-Ismail</a>, and <a href="http://www.csie.ntu.edu.tw/~htlin">Hsuan-Tien Lin</a></span></div>
+<!--End Header-->
+<!--Begin Wrap 3-->
+<div id="w3">
+<!--Begin Content-->
+<div id="content">
+<!--Begin Section-->
+<!-- <div class="section">
+<center><span style="color:red"><b>forum not working</b></span></center>
+<p></p>
+<p>Unfortunately the <a href="http://book.caltech.edu/bookforum/">book forum</a> is not working now because of a hardware issue. We are sorry about that. We are asking our system adminstrators to invesigate the issue with the hope of fixing it soon.</p>
+</div>
+-->
+
+<div class="section">
+<center><span style="color:red"><b>Dynamic e-Chapters</b></span></center>
+<p></p>
+<p>As a <b>free</b> service to our readers, we are introducing e-Chapters that cover new topics that are not covered in the book. These chapters are dynamic and will change with new trends in Machine Learning. New chapters will be added as time permits.</p>
+
+<p>To access the e-Chapters, please go to <a href="eChapters.html">this page</a>. Enjoy!</p>
+</div>
+
+<div class="section">
+<h2>Book Highlights:</h2>
+<ul>
+<li>The fundamentals of Machine Learning; this is a short course, not a hurried course</li>
+
+<li>Clear story-like exposition of the ideas accessible to a wide range of readers from beginners to practitioners to experts</li>
+
+<li>Balanced treatment of the theoretical and the practical, the mathematical and the heuristic; 
+in-depth discussion of (a) linear models (b) overfitting to stochastic and deterministic noise (c) regularization (d) generalization and the VC
+dimension</li>
+
+<li>Over 50 color illustrations; over 100 problems and exercises to supplement learning and to study more advanced topics</li>
+
+<!-- <li>Discussion forum with supplementary material <a href="http://book.caltech.edu/bookforum/">(LFD Book Forum)</a></li> -->
+</ul>
+</div>
+
+<a name="_get"></a>
+<div class="section">
+<h2>Get the Book:</h2>
+<ul>
+<li>Available on <a href="http://www.amazon.com/gp/product/1600490069">Amazon</a><br></br>
+<font size="2">The book has been sold to the following countries on Amazon: 
+Argentina, Australia, Austria, Bangladesh, Belgium, Brazil, China, Croatia, Cyprus, Czech Republic, Denmark, Ecuador, Estonia, Finland, France, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Korea, Macedonia, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Saudi Arabia, Singapore, South Africa, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, United Kingdom, United States
+</font><br></br>
+</li>
+
+<p>
+<li><b>Bulk orders</b> from amlbook.com (EMSQRD LLC): <a href="contact.html">contact us directly</a>---non-US customers can enjoy faster shipping with the bulk option (7-10 days) than with the Amazon option.
+<br></br>
+</li>
+
+<p>
+<li><b>Distributors</b>, book stores and Instructors: <a href="contact.html">contact us directly</a> </li>
+</ul>
+</div>
+
+<a name="_welcome"></a>
+<!--End Section-->
+<!--Begin Section-->
+<div class="section">
+<h2>Welcome Message from the Authors</h2>
+
+<p>Machine learning allows computational systems to adaptively improve their performance with experience accumulated from the observed data. Its techniques are widely applied in engineering, science, finance, and commerce. This book is designed for a short course on machine learning. It is a short course, not a hurried course. From over a decade of teaching this material, we have distilled what we believe to be the core topics that every student of the subject should know. We chose the title `learning from data' that faithfully describes what the subject is about, and made it a point to cover the topics in a story-like fashion. Our hope is that the reader can learn all the fundamentals of the subject by reading the book cover to cover.</p>
+
+<p>Learning from data has distinct theoretical and practical tracks. In this book, we balance the theoretical and the practical, the mathematical and the heuristic. Our criterion for inclusion is relevance. Theory that establishes the conceptual framework for learning is included, and so are heuristics that impact the performance of real learning systems.</p>
+
+<p>Learning from data is a very dynamic field. Some of the hot techniques and theories at times become just fads, and others gain traction and become part of the field. What we have emphasized in this book are the necessary fundamentals that give any student of learning from data a solid foundation, and enable him or her to venture out and explore further techniques and theories, or perhaps to contribute their own.</p>
+
+<p>The authors are professors at California Institute of Technology (Caltech), Rensselaer Polytechnic Institute (RPI), and National Taiwan University (NTU), where this book is the main text for their popular courses on machine learning. The authors also consult extensively with financial and commercial companies on machine learning applications, and have led winning teams in machine learning competitions.</p>
+
+</div>
+<!--End Section-->
+</div>
+<!--End Content-->
+<!--Begin Sidebar-->
+<div id="sidebar">
+<!--Begin Navigation-->
+<ul id="nav">
+<li><a href="index.html">[Home]</a></li>
+<li><a href="index.html#_welcome">Welcome Message</a></li> 
+<li><a href="http://www.amazon.com/gp/product/1600490069"><span style="color:red">Order from Amazon</span></a></li>
+<!-- <li><a href="http://www.amazon.com/gp/product/1600490069">Get the Book: from Amazon</a></li> 
+<li><a href="#_get">Get the Book: Other Options</a></li> -->
+<!-- <li><a href="http://book.caltech.edu/bookforum/">The LFD Book Forum</a></li> -->
+<li><a href="eChapters.html">Dynamic e-Chapters</a></li>
+<li><a href="support.html">Supporting Material</a></li>
+<li><a href="roster.html">Instructor Roster</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FLearningFromData&amp;send=false&amp;layout=standard&amp;width=300&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:35px;" allowTransparency="true"></iframe></li>
+</ul>
+<!--End Navigation-->
+<!--Begin Aside-->
+<div class="aside">
+
+<div id="peek">
+<div class="section">
+<h2>Peek into the book</h2>
+<ul>
+<li><a href="images/front.jpg">Front Cover</a></li>
+<li><a href="pages/toc.pdf">Table of Contents</a></li>
+<li><a href="pages/preamble.pdf">Chapter Preambles</a></li>
+<li><a href="pages/notation.pdf">Notation</a></li>
+<li><a href="pages/index.pdf">Index of Terms</a></li>
+<li><a href="images/back.jpg">Back Cover</a></li>
+</ul>
+</div>
+</div>
+
+<img src="image1.png" width="228" border="2" name="cycle" alt="loading" />
+
+<!--
+<div class="section"><h2>Covers (click to enlarge)</h2>
+<a href="images/back.jpg"><img src="images/back.jpg" width="95" height="148" alt="image" /></a> <a href="images/front.jpg"><img src="images/front.jpg" width="95" height="148" alt="image" /></a><br/></div>
+-->
+
+</div>
+<!--End Aside-->
+</div>
+<!--End Sidebar-->
+<br class="clearfloat" /><!--DO NOT REMOVE THIS BR TAG - IMPORTANT FOR PROPER LAYOUT--></div>
+<!--End Wrap 3-->
+</div>
+<!--End Wrap 2-->
+<!--Begin Footer-->
+<div id="footer">
+<img src="images/aml-logo.png" width="42" alt="AMLbook.com" id="cit-seal" />
+<span class="copyright">
+<script type="text/javascript">
+<!--
+document.write('&copy;', new Date().getFullYear());
+// -->
+</script>
+Yaser S. Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin. All rights reserved.</span>
+</div>
+<!--End Footer-->
+</div>
+<!--End Wrap 1-->
+</body>
+</html>
